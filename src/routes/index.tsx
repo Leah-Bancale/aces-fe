@@ -16,12 +16,14 @@ import {
 
 import { ColorModeContext, useMode } from "theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import Dashboard from "pages/Admin/Dashboard";
-import Layout from "pages/Admin/Layout";
-import Jobs from "pages/Admin/Jobs";
-import Alumni from "pages/Admin/Alumni";
-import Companies from "pages/Admin/Companies";
-import VerifyCompanies from "pages/Admin/VerifyCompany";
+import {
+  Dashboard,
+  Layout,
+  Jobs,
+  Alumni,
+  Companies,
+  VerifyCompanies,
+} from "../pages/export";
 
 const AcesRoutes = () => {
   const { theme, toggleColorMode } = useMode();
