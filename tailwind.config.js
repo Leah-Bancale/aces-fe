@@ -11,15 +11,15 @@ module.exports = {
       'md': '770px',
       'lg': '1050px',
       'xl': '1280px',
-      'xlg': '1450px', 
+      'xlg': '1450px',
     },
 
     extend: {
-      
+
       colors: {
-        'main': '#030F4B', 
+        'main': '#030F4B',
         'second': '#6358DC',
-        'primary':'#221769',
+        'primary': '#221769',
       },
     },
   },

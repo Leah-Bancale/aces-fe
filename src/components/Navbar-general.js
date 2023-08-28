@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { RxHamburgerMenu, RxCross2 } from 'react-icons/rx';
 import { FaCalendarAlt, FaBriefcase, FaBell, FaQuestionCircle, FaUserCircle } from "react-icons/fa";
 
@@ -25,9 +24,6 @@ function NavbarGeneral() {
         }
     }, [opened])
 
-
-
-
     return (
         <div className="static top-0 w-full bg-primary">
             <div className="container mx-auto p-3 hidden sm:flex ">
@@ -37,11 +33,11 @@ function NavbarGeneral() {
                 <div className="hidden sm:flex justify-center ml-auto">
                     <ul className="flex space-x-8 text-white text-[14px] text-bold items-center ">
 
-                        <li><a href="/Events" className='flex flex-col items-center'><FaCalendarAlt size={25} className='mb-1'/>Events</a></li>
-                        <li><a href="/Jobs" className='flex flex-col items-center'><FaBriefcase size={25} className='mb-1'/>Jobs</a></li>
-                        <li><a href="/Notifs" className='flex flex-col items-center'><FaBell size={25} className='mb-1'/>Notifs</a></li>
-                        <li><a href="/Help" className='flex flex-col items-center'><FaQuestionCircle size={25} className='mb-1'/>Help</a></li>
-                        <li><a href="/Profile" className='flex flex-col items-center'><FaUserCircle size={25} className='mb-1'/>Profile</a></li>
+                        <li><a href="/Events" className='flex flex-col items-center'><FaCalendarAlt size={25} className='mb-1' />Events</a></li>
+                        <li><a href="/Jobs" className='flex flex-col items-center'><FaBriefcase size={25} className='mb-1' />Jobs</a></li>
+                        <li><a href="/Notifs" className='flex flex-col items-center'><FaBell size={25} className='mb-1' />Notifs</a></li>
+                        <li><a href="/Help" className='flex flex-col items-center'><FaQuestionCircle size={25} className='mb-1' />Help</a></li>
+                        <li><a href="/Profile" className='flex flex-col items-center'><FaUserCircle size={25} className='mb-1' />Profile</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,11 +69,11 @@ function NavbarGeneral() {
 
                 <div className="flex flex-col items-center text-center">
                     <ul className="flex flex-col p-4 gap-6 text-white text-bold">
-                    <li><a href="Events" className='flex flex-col items-center' onClick={closeMenu} ><FaCalendarAlt size={25} className='mb-1'/>Events</a></li>
-                        <li><a href="/Jobs" className='flex flex-col items-center' onClick={closeMenu} ><FaBriefcase size={25} className='mb-1'/>Jobs</a></li>
-                        <li><a href="/Notifs" className='flex flex-col items-center' onClick={closeMenu} ><FaBell size={25} className='mb-1'/>Notifs</a></li>
-                        <li><a href="/Help" className='flex flex-col items-center' onClick={closeMenu} ><FaQuestionCircle size={25} className='mb-1'/>Help</a></li>
-                        <li><a href="/Profile" className='flex flex-col items-center' onClick={closeMenu} ><FaUserCircle size={25} className='mb-1'/>Profile</a></li>
+                        <li><a href="Events" className='flex flex-col items-center' onClick={closeMenu} ><FaCalendarAlt size={25} className='mb-1' />Events</a></li>
+                        <li><a href="/Jobs" className='flex flex-col items-center' onClick={closeMenu} ><FaBriefcase size={25} className='mb-1' />Jobs</a></li>
+                        <li><a href="/Notifs" className='flex flex-col items-center' onClick={closeMenu} ><FaBell size={25} className='mb-1' />Notifs</a></li>
+                        <li><a href="/Help" className='flex flex-col items-center' onClick={closeMenu} ><FaQuestionCircle size={25} className='mb-1' />Help</a></li>
+                        <li><a href="/Profile" className='flex flex-col items-center' onClick={closeMenu} ><FaUserCircle size={25} className='mb-1' />Profile</a></li>
                     </ul>
 
 
