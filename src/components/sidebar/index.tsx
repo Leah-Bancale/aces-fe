@@ -14,15 +14,6 @@ import {
 } from "@mui/material";
 
 import {
-  HomeOutlined,
-  VerifiedUser,
-  HandshakeOutlined,
-  PendingActionsOutlined,
-  WorkOutline,
-  ListAlt,
-  Diversity3,
-  LiveHelpOutlined,
-  CalendarMonthOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   SettingsOutlined,
@@ -31,6 +22,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import { tokens } from "theme";
 import placeholder from "../../assets/placeholder.webp";
+import { navItems } from "../../constant/sidebarItems";
 
 interface SidebarProps {
   isNonMobile: boolean;
@@ -38,62 +30,6 @@ interface SidebarProps {
   isSidebarOpen: boolean;
   setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
-const navItems = [
-  {
-    text: "Dashboard",
-    icon: <HomeOutlined />,
-  },
-  {
-    text: "Company Section",
-    icon: null,
-  },
-  {
-    text: "Verification Company",
-    icon: <VerifiedUser />,
-  },
-  {
-    text: "Companies",
-    path: "/companies",
-    icon: <HandshakeOutlined />,
-  },
-  {
-    text: "Jobs",
-    icon: <PendingActionsOutlined />,
-  },
-  {
-    text: "Pending Jobs",
-    icon: <WorkOutline />,
-  },
-  {
-    text: "Alumni Section",
-    icon: null,
-  },
-  {
-    text: "Alumni",
-    icon: <Diversity3 />,
-  },
-  {
-    text: "Verification Alumni",
-    icon: <VerifiedUser />,
-  },
-  {
-    text: "Others",
-    icon: null,
-  },
-  {
-    text: "FAQ",
-    icon: <LiveHelpOutlined />,
-  },
-  {
-    text: "Events",
-    icon: <ListAlt />,
-  },
-  {
-    text: "Calendar",
-    icon: <CalendarMonthOutlined />,
-  },
-];
 
 const Sidebar = ({
   isNonMobile,
@@ -132,6 +68,7 @@ const Sidebar = ({
               boxSizing: "border-box",
               borderWidth: isNonMobile ? 0 : "2px",
               width: drawerWidth,
+              transition: "width 0.3s ease-in-out",
             },
           }}
         >
